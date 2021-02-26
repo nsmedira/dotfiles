@@ -17,7 +17,11 @@
 
 
 	# Always open everything in Finder's list view. This is important.
-	defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+	# defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+
+	# Always open Finder in column view
+	# https://www.defaults-write.com/change-default-view-style-in-os-x-finder/
+	defaults write com.apple.Finder FXPreferredViewStyle clmv
 
 
 	# Show the ~/Library folder.
