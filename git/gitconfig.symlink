@@ -1,9 +1,8 @@
 [user]
-    name = Cameron Wardzala
-    email = cwardzala@fastmail.com
-    signingkey = 9ECF121CBDE191B1
-[credential]
-    helper = osxkeychain
+    name = Nick Smedira
+    email = nsmedira@me.com
+[pager]
+	branch = false
 [color]
     diff = auto
     status = auto
@@ -11,45 +10,7 @@
     ui = true
     interactive = true
 [core]
-    excludesfile = /Users/cwardzala/.gitignore
-    editor = vim
-    ignorecase = false
-[apply]
-    whitespace = nowarn
-[mergetool]
-    keepBackup = false
-[help]
-    autocorrect = 1
-[push]
-    default = simple
-    followTags = true
-[filter "media"]
-    clean = git-media-clean %f
-    smudge = git-media-smudge %f
-[diff]
-    tool = icdiff
-[difftool]
-    prompt = false
-[difftool "icdiff"]
-    cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
-[filter "lfs"]
-    required = true
-    clean = git-lfs clean %f
-    smudge = git-lfs smudge %f
+    excludesfile = ~/.gitignore
 [color "diff"]
     old = red strike
     new = green italic
-[commit]
-	gpgsign = true
-[alias]
-    up = pull --rebase --autostash
-    prune = fetch --prune
-    undo = reset --soft HEAD^
-    stash-all = stash save --include-untracked
-    leaderboard = shortlog -sn
-[gpg]
-    program = /usr/local/MacGPG2/bin/gpg
-[status]
-    showUntrackedFiles = all
-[pull]
-	rebase = false
