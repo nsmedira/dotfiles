@@ -4,6 +4,7 @@ alias jira="open \"https://findawayworld.atlassian.net/secure/Dashboard.jspa\""
 alias gh-shop="open \"https://www.github.com/FindawayWorld/shop.playaway.com\""
 alias gh-solon="open \"https://github.com/FindawayWorld/Solon\""
 alias gh-voices="open \"https://github.com/FindawayWorld/my.findawayvoices.com\""
+alias gh-my-repos="open \"https://github.com/nsmedira?tab=repositories\""
 alias solon-site="open \"https://solon.findaway.com\""
 alias wiki="open \"https://findawayworld.atlassian.net/wiki/home\""
 
@@ -44,6 +45,8 @@ alias sbr="sandbox remove"
 # shortcuts
 alias projects="cd ~/Documents/projects"
 alias zrc="vsc ~/.zshrc"
+alias dotfiles="vsc ~/.dotfiles"
+alias aliases="cd ~/.dotfiles/zsh && vsc aliases.zsh"
 
 # system
 alias open="open"
