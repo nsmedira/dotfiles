@@ -1,7 +1,9 @@
 # nsmedira does dotfiles
 
 Original repo from [@holman](https://github.com/holman)/[dotfiles](https://github.com/holman/dotfiles)
+
 Read [@holman](https://github.com/holman)'s [post on the subject of dotfiles](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
+
 Forked from [@cwardzala](https://github.com/cwardzala)/[dotfiles](https://github.com/cwardzala/dotfiles)
 
 ## dotfiles
@@ -16,7 +18,7 @@ Run this:
 git clone https://github.com/holman/dotfiles.git ~/.dotfiles
 ```
 
-Before continuing, if you do not want to overwrite your existing dot files with mine, replace anything with an extension of .symlink with your own dot files. For example, remove the contents of `zshrc.symlink` and paste in the contents of your own `.zshrc` file.
+Before continuing, if you do not want to overwrite your existing dot files with mine, replace anything with an extension of .symlink with your own dot files. For example, remove the contents of `zshrc.symlink` and paste in the contents of your own `.zshrc` file. (You will have the option to skip overwriting your existing dot files, however this would somewhat defeat the purpose of cloning a versioned dotfiles repo...)
 
 After you've added your own dot files, run this:
 
