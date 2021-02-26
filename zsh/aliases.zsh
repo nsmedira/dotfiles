@@ -1,46 +1,57 @@
-alias colourify="$commands[grc] -es --colour=auto"
+# bookmarks
+alias wl="open \"https://docs.google.com/document/d/1xwAQJ1Km6HPXZbCovK4tTJA1kPwC0087G6YYMJI97Q0/edit?usp=sharing\""
+alias jira="open \"https://findawayworld.atlassian.net/secure/Dashboard.jspa\""
+alias gh-shop="open \"https://www.github.com/FindawayWorld/shop.playaway.com\""
+alias gh-solon="open \"https://github.com/FindawayWorld/Solon\""
+alias gh-voices="open \"https://github.com/FindawayWorld/my.findawayvoices.com\""
+alias solon-site="open \"https://solon.findaway.com\""
+alias wiki="open \"https://findawayworld.atlassian.net/wiki/home\""
 
-alias reload!="exec $SHELL -l"
-alias dotfiles="$EDITOR ~/.dotfiles"
-alias dots="dotfiles"
-alias edit="$EDITOR ."
-alias hosts!="$EDITOR /etc/hosts"
+# gatsby
+alias gab="gatsby build"
+alias gad="gatsby develop"
+alias gas="gatsby serve"
 
-alias gst="gss"
-alias gbc="gcb"
+# git
+alias gcb="git checkout -b"
+alias gcl="git clone"
+alias gl="git log"
+alias gp="git pull"
+alias grs1="git reset --soft HEAD~1"
+function gmnc() {
+    gm $1 --no-commit
+}
 
-alias fw="pushd ~/Findaway"
-alias proj="pushd ~/Projects"
-alias icd="pushd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs"
+# projects
+alias chaptering="projects && cd ChapteringToolFrontEnd && vsc ."
+alias findaway="projects && cd findaway.com && vsc ."
+alias gateway="projects && cd aegateway-frontend && vsc ."
+alias morewonderbook="projects && cd morewonderbook.com && vsc ."
+alias nook="projects && cd nookaudiobooks.com && vsc ."
+alias passport="projects && cd passport.findaway.com && vsc ."
+alias playaway="projects && cd playaway.com && vsc ."
+alias shop="projects && cd shop.playaway.com && vsc ."
+alias solon="projects && cd Solon && vsc ."
+alias spread-wonder="projects && cd spread-wonder.com && vsc ."
+alias voices="projects && cd my.findawayvoices.com && vsc ."
 
-# List direcory contents
-alias lsa='colourify ls -lah'
-alias l='colourify ls -la'
-alias ll='colourify ls -l'
-alias la='colourify ls -lA'
+# sandboxes
+alias sbc="sandbox create"
+alias sbd="sandbox deploy"
+alias sbi="sandbox info"
+alias sbr="sandbox remove"
 
-# Pipe my public key to my clipboard.
-alias pubkey="less ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+# shortcuts
+alias projects="cd ~/Documents/projects"
+alias zrc="vsc ~/.zshrc"
 
-alias gclean="git checkout master && git branch --merged master | grep -v \"\* master\" | xargs -n 1 git branch -d"
+# system
+alias open="open"
+alias vsc="code"
 
-alias ip='colourify ipconfig getifaddr en0'
-alias pubip='colourify dig +short myip.opendns.com @resolver1.opendns.com'
-alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
-
-alias update='/Users/cwardzala/.dotfiles/bin/update.sh'
-alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
-alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
-
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-alias android-studio="open -a /Applications/Android\ Studio.app/"
-
-alias did="vim +'normal Go' +'r!date' ~/did.txt"
-
-alias server="npx http-server"
-
-alias homeserver="ssh cwardzala@192.168.68.144 -p 25705"
-alias homeserver-public="ssh cwardzala@23.28.174.57 -p 25705"
-
-alias dl-video="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' $1"
-alias dl-audio="youtube-dl -f 'bestaudio[ext=m4a]/best' $1"
+# yarn
+alias y="yarn"
+alias ya="yarn add"
+alias yb="yarn build"
+alias yr="yarn remove"
+alias ys="yarn start"
