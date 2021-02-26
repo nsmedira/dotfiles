@@ -2,13 +2,32 @@
 #
 # Run all dotfiles installers.
 
-set -e
+# if a command fails, exit script
+# set -e
+
+# if a command fails, do not exit script
+set +e
 
 cd "$(dirname $0)"/..
 
 # Run Homebrew through the Brewfile
 echo "› brew bundle"
 brew bundle
+BREW_BUNDLE_EXIT_CODE=$?
 
 # find the installers and run them iteratively
+echo "> running installers"
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+INSTALLER_EXIT_CODE=$?
+
+if (( $BREW_BUNDLE_EXIT_CODE != 0 || $INSTALLER_EXIT_CODE != 0 )) ; then
+    if (($BREW_BUNDLE_EXIT_CODE != 0)) ; then
+        echo "> error in `brew bundle`"
+    fi
+    if (($INSTALLER_EXIT_CODE != 0)) ; then
+        echo "> error running installers"
+    fi   
+    echo "result: error(s)"
+else
+    echo "result: success"
+fi
