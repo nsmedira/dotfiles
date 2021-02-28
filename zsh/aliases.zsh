@@ -35,7 +35,20 @@ alias nook="projects && cd nookaudiobooks.com && vsc ."
 alias passport="projects && cd passport.findaway.com && vsc ."
 alias playaway="projects && cd playaway.com && vsc ."
 alias shop="projects && cd shop.playaway.com && vsc ."
-alias solon="projects && cd Solon && vsc ."
+# alias solon="projects && (cd Solon || cd repos/findaway-onboarding/Solon) && vsc ."
+function solon() {
+
+    # if a command fails, do not exit script
+    # set +e
+
+    projects 
+
+    if cd Solon ; then
+        vsc .
+    else 
+        cd repos/findaway-onboarding/Solon && vsc .
+    fi
+}
 alias spread-wonder="projects && cd spread-wonder.com && vsc ."
 alias voices="projects && cd my.findawayvoices.com && vsc ."
 
