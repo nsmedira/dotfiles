@@ -46,6 +46,7 @@ cask 'slack'
 cask 'spotify'
 cask 'rectangle'
 cask 'visual-studio-code'
+cask 'caffeine'
 
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
