@@ -14,3 +14,5 @@
 [color "diff"]
     old = red strike
     new = green italic
+[credential]
+	helper = osxkeychain
