@@ -116,6 +116,10 @@ install_dotfiles () {
     fi
 
   done
+
+  # VS Code
+  link_files "${HOME}/.dotfiles/vscode/settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
+
 }
 
 install_dotfiles
