@@ -1,3 +1,6 @@
+# apps
+alias postman="open -a Postman"
+
 # bookmarks
 alias wl="open \"https://docs.google.com/document/d/1xwAQJ1Km6HPXZbCovK4tTJA1kPwC0087G6YYMJI97Q0/edit?usp=sharing\""
 alias jira="open \"https://findawayworld.atlassian.net/secure/Dashboard.jspa\""
@@ -23,7 +26,7 @@ function gmnc() {
     gm $1 --no-commit
 }
 
-# projects
+# findaway projects
 alias chaptering="projects && cd ChapteringToolFrontEnd && vsc ."
 alias findaway="projects && cd findaway.com && vsc ."
 alias gateway="projects && cd aegateway-frontend && vsc ."
@@ -36,6 +39,11 @@ alias solon="projects && cd Solon && vsc ."
 alias spread-wonder="projects && cd spread-wonder.com && vsc ."
 alias voices="projects && cd my.findawayvoices.com && vsc ."
 
+# personal projects
+alias imgr="repos && cd investment-manager && vsc ."
+alias remind-me="repos && cd remind-me && vsc ."
+alias squares="repos && cd squares && vsc ."
+
 # sandboxes
 alias sbc="sandbox create"
 alias sbd="sandbox deploy"
@@ -47,6 +55,7 @@ alias projects="cd ~/Documents/projects"
 alias zrc="vsc ~/.zshrc"
 alias dotfiles="vsc ~/.dotfiles"
 alias aliases="cd ~/.dotfiles/zsh && vsc aliases.zsh"
+alias repos="cd ~/Documents/projects/repos"
 
 # system
 alias open="open"
@@ -58,3 +67,4 @@ alias ya="yarn add"
 alias yb="yarn build"
 alias yr="yarn remove"
 alias ys="yarn start"
+alias yd="yarn dev"

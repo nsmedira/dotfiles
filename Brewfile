@@ -44,6 +44,7 @@ cask 'postman'
 cask 'sketch'
 cask 'slack'
 cask 'spotify'
+cask 'rectangle'
 cask 'visual-studio-code'
 
 mas "Keynote", id: 409183694
