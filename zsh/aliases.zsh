@@ -76,8 +76,13 @@ alias vsc="code"
 
 # yarn
 alias y="yarn"
+alias yga="yarn global add"
 alias ya="yarn add"
 alias yb="yarn build"
+alias ybs="yarn build:stage"
 alias yr="yarn remove"
 alias ys="yarn start"
 alias yd="yarn dev"
+
+# serve
+alias ssb="serve -s build"

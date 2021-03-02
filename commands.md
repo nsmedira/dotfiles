@@ -19,3 +19,5 @@ or
 # [`2>&1`](https://www.brianstorti.com/understanding-shell-script-idiom-redirect/)
 
 when you use `2>&1` you are basically saying “Redirect the `stderr` to the same place we are redirecting the `stdout`”.
+
+# [Linking](https://www.gsp.com/cgi-bin/man.cgi?section=1&topic=ln)
