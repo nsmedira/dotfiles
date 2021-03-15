@@ -8,6 +8,7 @@ alias gh-shop="open \"https://www.github.com/FindawayWorld/shop.playaway.com\""
 alias gh-solon="open \"https://github.com/FindawayWorld/Solon\""
 alias gh-voices="open \"https://github.com/FindawayWorld/my.findawayvoices.com\""
 alias gh-my-repos="open \"https://github.com/nsmedira?tab=repositories\""
+alias gh-gateway="open \"https://github.com/FindawayWorld/aegateway-frontend\""
 alias solon-site="open \"https://solon.findaway.com\""
 alias wiki="open \"https://findawayworld.atlassian.net/wiki/home\""
 
@@ -25,6 +26,7 @@ alias grs1="git reset --soft HEAD~1"
 function gmnc() {
     gm $1 --no-commit
 }
+alias gb="git branch --sort=-committerdate"
 
 # findaway projects
 alias chaptering="projects && cd ChapteringToolFrontEnd && vsc ."
