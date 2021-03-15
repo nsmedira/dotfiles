@@ -26,7 +26,7 @@ alias grs1="git reset --soft HEAD~1"
 function gmnc() {
     gm $1 --no-commit
 }
-alias gb="git branch --sort=-committerdate"
+alias gbd="git branch --sort=-committerdate"
 
 # findaway projects
 alias chaptering="projects && cd ChapteringToolFrontEnd && vsc ."
